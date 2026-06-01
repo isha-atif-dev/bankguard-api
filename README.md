@@ -35,33 +35,34 @@ via Docker.
 | Deployment | GCP Cloud Run |
 | Language | Python 3.11 |
 
----
+
+
+
 
 ## Project Structure
 
+```
 bankguard-api/
 ├── app/
 │   ├── core/
-│   │   ├── config.py         # Project settings
-│   │   └── exceptions.py     # Custom HTTP exceptions
+│   │   ├── config.py
+│   │   └── exceptions.py
 │   ├── models/
-│   │   └── transaction.py    # Domain model
+│   │   └── transaction.py
 │   ├── routers/
-│   │   └── transactions.py   # API endpoints
+│   │   └── transactions.py
 │   ├── schemas/
-│   │   └── transaction.py    # Request/response schemas
+│   │   └── transaction.py
 │   ├── services/
-│   │   └── transaction_service.py  # Business logic
-│   └── main.py               # App entry point
+│   │   └── transaction_service.py
+│   └── main.py
 ├── ml/
-│   └── model.py              # XGBoost + SHAP integration
 ├── tests/
-│   └── test_transactions.py  # pytest test suite
+│   └── test_transactions.py
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
-
----
+```
 
 ## Getting Started
 
