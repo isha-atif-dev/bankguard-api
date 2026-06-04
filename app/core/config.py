@@ -1,3 +1,16 @@
+"""
+config.py
+
+Central configuration file for the BankGuard API.
+
+All project settings are defined here in one place.
+Other files import the settings object to access these values
+instead of hardcoding them across multiple files.
+
+Secret values like real database passwords should be stored
+in a .env file which Pydantic reads automatically.
+"""
+
 from pydantic_settings import BaseSettings
 
 
