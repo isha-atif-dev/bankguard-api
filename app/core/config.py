@@ -21,10 +21,13 @@ class Settings(BaseSettings):
         "powered by XGBoost, SHAP, FastAPI, and PostgreSQL."
     )
     VERSION: str = "1.0.0"
+    
     # Database connection URL. Replace with real credentials in .env file.
     DATABASE_URL: str = "postgresql://user:password@localhost:5432/bankguard"
-    DEBUG: bool = True   # True means development mode with detailed errors.
-    
+
+    # True means development mode with detailed errors.
+    DEBUG: bool = True   
+
     # Reading secret values from .env file automatically.
     model_config = {"env_file": ".env", "case_sensitive": True}
 
